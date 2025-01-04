@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://b860gjte8fvp3"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_73l0p"]
+[ext_resource type="PackedScene" uid="uid://b3is80nchide1" path="res://rope.tscn" id="2_pcg1q"]
+[ext_resource type="Script" path="res://grapple_controller.gd" id="2_wwrn3"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_8xm0q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5gx3m"]
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_34i8v"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_73l0p")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_8xm0q")
+surface_material_override/0 = SubResource("StandardMaterial3D_5gx3m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_34i8v")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 0, 0)
+target_position = Vector3(0, 0, -50)
+
+[node name="RayCast3D2" type="RayCast3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0, 0)
+target_position = Vector3(0, 0, -50)
+
+[node name="GrappleController" type="Node" parent="." node_paths=PackedStringArray("left_ray", "right_ray")]
+script = ExtResource("2_wwrn3")
+left_ray = NodePath("../Camera3D/RayCast3D")
+right_ray = NodePath("../Camera3D/RayCast3D2")
+rope_scene = ExtResource("2_pcg1q")
+
+[node name="lefthook" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, -0.3, 0)
+
+[node name="righthook" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, -0.3, 0)
