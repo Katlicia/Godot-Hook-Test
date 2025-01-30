@@ -39,12 +39,17 @@ func _physics_process(delta: float) -> void:
 		velocity.y -= gravity
 	
 	if Input.is_action_just_pressed("jump"):
-		if is_on_floor() || gc.left_launched or gc.right_launched:
+		if is_on_floor():
 			velocity.y += jump_force
-			gc.retract_left()
-			gc.retract_right()
 	
+
+	if Input.is_action_pressed("shift"):
+		speed = 25.0
+	if Input.is_action_just_released("shift"):
+		speed = 15.0
+		
 	move_and_slide()
+	
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:

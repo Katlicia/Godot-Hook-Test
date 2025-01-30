@@ -48,6 +48,8 @@ shadow_enabled = true
 
 [node name="Ground" type="CSGBox3D" parent="."]
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(100, 1, 100)
 material = SubResource("StandardMaterial3D_3rvu5")
 
@@ -56,269 +58,359 @@ material = SubResource("StandardMaterial3D_3rvu5")
 [node name="CSGBox3D" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.9846, 10, 0)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.5298, 10, 7.15361)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6837, 10, 7.15361)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6837, 10, -9.99557)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0056, 10, -9.996)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0052, 10, -1.89685)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0052, 10, -1.89685)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8286, 10, -1.897)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.829, 10, -1.89685)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.4691, 10, 29.0234)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9239, 10, 36.177)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.77, 10, 36.177)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.77, 10, 19.0278)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D14" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4481, 10, 19.0274)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4485, 10, 27.1265)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D16" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4485, 10, 27.1265)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D17" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.6251, 10, 27.1264)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D18" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.6247, 10, 27.1265)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D19" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6635, 10, 29.0234)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.2087, 10, 36.177)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.637402, 10, 36.177)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D22" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.637402, 10, 19.0278)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D23" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6845, 10, 19.0274)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D24" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6841, 10, 27.1265)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D25" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6841, 10, 27.1265)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D26" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4925, 10, 27.1264)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D27" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4921, 10, 27.1265)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D28" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.3254, 10, -25.5678)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D29" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.8706, 10, -18.4141)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D30" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0245, 10, -18.4141)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D31" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0245, 10, -35.5633)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D32" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.3464, 10, -35.5638)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D33" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.346, 10, -27.4646)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D34" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.346, 10, -27.4646)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D35" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1694, 10, -27.4648)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D36" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1698, 10, -27.4646)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D37" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1814, 10, -25.5678)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D38" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.6362, 10, -18.4141)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D39" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.4823, 10, -18.4141)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D40" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.4823, 10, -35.5633)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D41" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1604, 10, -35.5638)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D42" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1608, 10, -27.4646)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D43" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1608, 10, -27.4646)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D44" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.3374, 10, -27.4648)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
 
 [node name="CSGBox3D45" type="CSGBox3D" parent="Cubes"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.337, 10, -27.4646)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")

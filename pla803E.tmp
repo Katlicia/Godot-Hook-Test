@@ -12,8 +12,6 @@ albedo_color = Color(0, 0, 1, 1)
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_34i8v"]
 
 [node name="Player" type="CharacterBody3D"]
-collision_layer = 2
-collision_mask = 2
 script = ExtResource("1_73l0p")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -37,7 +35,7 @@ script = ExtResource("2_wwrn3")
 left_ray = NodePath("../Camera3D/RayCast3D")
 right_ray = NodePath("../Camera3D/RayCast3D2")
 rope_scene = ExtResource("2_pcg1q")
-grapple_speed = 20.0
+grapple_speed = 10.0
 air_control = 10.0
 
 [node name="lefthook" type="Marker3D" parent="."]
