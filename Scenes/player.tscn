@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://b860gjte8fvp3"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_73l0p"]
-[ext_resource type="PackedScene" uid="uid://b3is80nchide1" path="res://rope.tscn" id="2_pcg1q"]
-[ext_resource type="Script" path="res://grapple_controller.gd" id="2_wwrn3"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_73l0p"]
+[ext_resource type="PackedScene" uid="uid://b3is80nchide1" path="res://Scenes/rope.tscn" id="2_pcg1q"]
+[ext_resource type="Script" path="res://Scripts/grapple_controller.gd" id="2_wwrn3"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_8xm0q"]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://be234iktwcmew"]
 
 [ext_resource type="Texture2D" uid="uid://cwoyb5uc4r7d3" path="res://assets/gray.png" id="1_n0jix"]
-[ext_resource type="PackedScene" uid="uid://b860gjte8fvp3" path="res://player.tscn" id="2_urcww"]
 [ext_resource type="Texture2D" uid="uid://c0eiai5i5n7d5" path="res://assets/orange.png" id="3_sasee"]
+[ext_resource type="PackedScene" uid="uid://bqdmp4ckcwkba" path="res://Scenes/Mikasa.tscn" id="3_srl2o"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0yb4l"]
 sky_top_color = Color(0.172549, 0.909804, 0.960784, 1)
@@ -35,9 +35,6 @@ uv1_scale = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 
 [node name="Game" type="Node3D"]
-
-[node name="Player" parent="." instance=ExtResource("2_urcww")]
-transform = Transform3D(0.982215, 0, -0.187758, 0, 1, 0, 0.187758, 0, 0.982215, 0, 3.1937, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_kwyi3")
@@ -414,3 +411,6 @@ collision_layer = 3
 collision_mask = 3
 size = Vector3(2, 20, 2)
 material = SubResource("StandardMaterial3D_6tft4")
+
+[node name="Node3D" parent="." instance=ExtResource("3_srl2o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
